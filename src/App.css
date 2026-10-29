@@ -249,6 +249,7 @@ h2 { font-size: clamp(36px, 5.5vw, 66px); line-height: 1; letter-spacing: -2.5px
 .skill-tag:hover { background: var(--ink); color: var(--card); transform: scale(1.06) rotate(-2deg); }
 
 /* ---------- Experience ---------- */
+.jobs { display: grid; gap: 26px; }
 .job {
   display: grid; grid-template-columns: 150px 1fr;
   background: var(--card); border: var(--line); border-radius: 22px;

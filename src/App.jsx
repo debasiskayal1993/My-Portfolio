@@ -4,6 +4,8 @@ import "./App.css";
 const CV_URL = "/Debasis_Kayal_CV.pdf";
 const EMAIL = "debasiskayal1993@gmail.com";
 const PHONES = ["9674570862", "6290254046"];
+const LINKEDIN = "https://www.linkedin.com/in/debasis-kayal-0408612ba";
+const GITHUB = "https://github.com/debasiskayal1993";
 const CURRENT_YEAR = new Date().getFullYear();
 const YEARS = CURRENT_YEAR - 2019;
 
@@ -13,168 +15,182 @@ const projects = [
   {
     name: "Portolo",
     category: "Web Application",
-    tech: ["React", "Redux"],
-    description:"React/TypeScript web application; add your specific modules, responsibilities, and outcomes",
-    status: "Ongoing",
+    domain: "Healthcare research",
+    tech: ["React.js", "Redux"],
+    description:
+      "Web platform for medical research workflows and healthcare solution management, covering organizations, entities, research data, study progress, role-based access, dashboards, and collaboration tools.",
   },
   {
     name: "GetFound",
     category: "Web Application",
-    tech: ["React", "Redux"],
-    description:"Add a concise description of the product and your contribution",
-    status: "Ongoing",
+    domain: "Service marketplace",
+    tech: ["React.js", "Redux"],
+    description:
+      "Service-provider platform that connects customers with providers and supports service requests, scheduling, and service management.",
   },
   {
-    name: "Helopoto",
+    name: "Sanatan Dinda",
     category: "Web Application",
-    tech: ["React", "Redux"],
-    description:"Add your role, technology stack, and key features delivered",
-    status: "Ongoing",
+    domain: "Art exhibition",
+    tech: ["React.js", "Redux"],
+    description:
+      "Art exhibition website for showcasing exhibitions and artists' work, and for visitors to browse a range of art.",
+  },
+  {
+    name: "Helofoto",
+    category: "Web Application",
+    domain: "Camera retail",
+    tech: ["React.js", "Redux"],
+    description:
+      "Camera and lens shop application for browsing and purchasing from nearby stores, with invoice generation and management.",
   },
   {
     name: "Hordanso",
     category: "Web · Micro-frontends",
-    tech: ["React", "Redux", "Webpack"],
+    domain: "Domain management",
+    tech: ["React.js", "Redux", "Webpack", "Micro-frontends"],
     description:
-      "Micro-frontend based platform with separate Admin and Customer portals. Responsible for design and development.",
-    status: "Ongoing",
+      "Domain marketplace with admin and customer portals for buying and selling domains.",
   },
   {
     name: "AME Electrical Solutions Inc.",
     category: "Web Application",
-    tech: ["React", "Redux"],
+    domain: "Generator services",
+    tech: ["React.js", "Redux"],
     description:
-      "Admin and Customer portals for an electrical solutions company. Responsible for design and development.",
-    status: "Ongoing",
+      "Generator service application with an admin portal for service requests, maintenance scheduling, and customer management.",
     links: [{ label: "portal.mtechpower.com", href: "https://portal.mtechpower.com" }],
   },
   {
     name: "Clock Me Now",
     category: "Web Application",
-    tech: ["React", "Redux"],
+    domain: "Time tracking",
+    tech: ["React.js", "Redux"],
     description:
-      "Online time tracking web application with an Admin portal. Responsible for design and development.",
-    status: "Ongoing",
+      "Time-capture application for logging and managing work hours.",
     links: [{ label: "dev.clockmenow.com", href: "https://dev.clockmenow.com" }],
   },
   {
     name: "Crestest",
     category: "Web · Learning Platform",
-    tech: ["React", "Redux"],
+    domain: "Education",
+    tech: ["React.js", "Redux"],
     description:
-      "Online learning platform with Admin, Customer and DAM portals. Responsible for design and development.",
-    status: "Ongoing",
+      "Online learning application for school students, with an admin portal for content and a student portal for lessons and resources.",
     links: [
       { label: "LMS", href: "https://lms.crestest.com" },
       { label: "Admin", href: "https://admin.crestest.com" },
       { label: "DAM", href: "https://dam.crestest.com" },
     ],
   },
-  {
-    name: "Goalgetter",
-    category: "Mobile Application",
-    tech: ["React Native", "Redux"],
-    description:
-      "Mobile application companion for the AME Electrical Solutions platform. Responsible for design and development.",
-    status: "Ongoing",
-  },
-  {
-    name: "AME Electrical Solutions Inc.",
-    category: "Mobile Application",
-    tech: ["React Native", "Redux"],
-    description:
-      "Mobile application companion for the AME Electrical Solutions platform. Responsible for design and development.",
-    status: "Ongoing",
-  },
-  {
-    name: "Medsolu",
-    category: "Mobile Application",
-    tech: ["React Native", "JavaScript", "RN Paper"],
-    description:
-      "Online medicine mobile application built with a themed React Native Paper UI. Responsible for design and development.",
-    status: "Mar 2022 – Dec 2022",
-  },
-  {
-    name: "Instafi",
-    category: "Mobile Application",
-    tech: ["React Native", "JavaScript"],
-    description:
-      "Home loan mobile application. Responsible for design and development.",
-    status: "May 2022 – Jan 2023",
-  },
-  {
-    name: "Knack",
-    category: "Mobile Application",
-    tech: ["React Native"],
-    description:
-      "Online car servicing provider mobile application. Responsible for design and development.",
-    status: "Dec 2021 – Jan 2024",
-  },
 ];
 
 const skillGroups = [
   {
     title: "Frontend",
-    items: ["React Js", "Next Js", "Redux", "Webpack", "TypeScript", "ES6"],
+    items: [
+      "React.js", "Next.js", "JavaScript (ES6+)", "TypeScript",
+      "HTML5", "CSS3", "Bootstrap", "jQuery", "Ajax",
+    ],
   },
   {
-    title: "Mobile",
-    items: ["React Native", "React Native Paper", "API Integration"],
+    title: "State & Navigation",
+    items: ["Redux Toolkit", "Redux", "Context API", "React Navigation"],
   },
   {
-    title: "Markup & Styling",
-    items: ["HTML5", "CSS3", "Bootstrap 3 / 4", "Responsive UI Design"],
+    title: "API & Data",
+    items: ["REST API integration", "JSON", "Axios / fetch", "AsyncStorage"],
   },
   {
-    title: "Other",
-    items: ["jQuery", "Ajax", "REST API Services", "Micro-frontends"],
+    title: "Mobile & Tools",
+    items: [
+      "React Native", "WebView integration", "Android Studio",
+      "Git & GitHub", "npm", "Webpack", "VS Code", "Agile / Scrum",
+    ],
+  },
+];
+
+const strengths = [
+  {
+    title: "Reusable UI",
+    value: "Component-based UI development and reusable frontend patterns.",
+  },
+  {
+    title: "Integration",
+    value: "Frontend/backend coordination and REST API integration.",
+  },
+  {
+    title: "Quality",
+    value: "Debugging, issue resolution, and maintainable implementation.",
+  },
+  {
+    title: "Teamwork",
+    value: "Collaboration, task ownership, and iterative delivery.",
   },
 ];
 
 const ticker = [
-  "React Js", "Next Js", "React Native", "Redux", "Webpack",
-  "TypeScript", "ES6", "HTML5", "CSS3", "Bootstrap", "REST APIs",
+  "React.js", "Next.js", "React Native", "Redux Toolkit", "TypeScript",
+  "JavaScript", "HTML5", "CSS3", "Bootstrap", "REST APIs", "Webpack",
 ];
 
-const responsibilities = [
-  "Home Loan application using React Native.",
-  "Online Medicine application using React Native.",
-  "Online Car Servicing Provider application using React Native.",
-  "Online Learning web application using React Js.",
-  "Online Generator service web application using React Js.",
-  "Online Time Tracking web application using React Js.",
+const jobs = [
+  {
+    role: "Software Developer",
+    company: "BEAS Consultancy And Services Private Limited",
+    location: "Salt Lake Sector 5, Kolkata",
+    from: "Jan 2025",
+    to: "Present",
+    current: true,
+    stamp: "Current",
+    points: [
+      "Develop and maintain application features using React.js, JavaScript, and React Native.",
+      "Build reusable UI components and responsive layouts for web workflows.",
+      "Integrate frontend screens with REST APIs and manage application state using Redux.",
+      "Debug UI and integration issues and support ongoing feature delivery with the project team.",
+    ],
+  },
+  {
+    role: "Software Engineer",
+    company: "Schemaphic Systems Pvt. Ltd.",
+    location: "Bansdroni, Kolkata",
+    from: "May 2019",
+    to: "Oct 2024",
+    stamp: "5+ yrs",
+    points: [
+      "Developed and maintained web application interfaces using React.js and JavaScript.",
+      "Built reusable UI components and responsive layouts to support consistent user experiences.",
+      "Integrated frontend screens with REST APIs and handled application data and state using Redux and related patterns.",
+      "Investigated UI and integration issues, debugged application behavior, and supported ongoing maintenance.",
+      "Worked with project stakeholders and other developers to implement application requirements and deliver changes.",
+      "Contributed to React Native development where required, including mobile UI and API-connected workflows.",
+    ],
+  },
 ];
 
 const education = [
   {
-    title: "Graduation (B.Voc)",
-    place: "Asutosh College · University of Calcutta",
+    title: "B.Voc. in Software Development",
+    place: "Asutosh College, Kolkata · May 2016 – June 2019",
     year: "2019",
   },
   {
-    title: "Higher Secondary (Standard XII)",
-    place: "Paschim Putiary Sukharanjan Vidyamandir · W.B.S.C.T.V.E.S.D",
+    title: "Higher Secondary",
+    place: "Paschim Putiary Sukharanjan Vidyamandir, Kolkata · April 2014 – May 2016",
     year: "2016",
   },
   {
-    title: "Madhyamik (Standard X)",
-    place: "Narendrapur Milan Vidyapith · W.B.B.S.E",
+    title: "Madhyamik",
+    place: "Narendrapur Milan Vidyapith, West Bengal · May 2009 – June 2010",
     year: "2010",
   },
 ];
 
-const extras = [
-  { title: "Certification", value: "BASIC (Ramakrishna Mission)" },
-  { title: "Course", value: "Web Designing (Oskings Tech Solutions)" },
-  { title: "Languages", value: "English · Bengali · Hindi" },
-  { title: "Interests", value: "Cricket · Football · Music · Mobile games" },
-];
-
 const stats = [
   { value: `${YEARS}+`, label: "Years experience" },
-  { value: String(projects.length), label: "Projects shipped" },
-  { value: "2", label: "Platforms · Web & Mobile" },
-  { value: "3", label: "Portals per product" },
+  { value: String(projects.length), label: "Projects delivered" },
+  { value: "2", label: "Companies" },
+  { value: "7", label: "Industries served" },
 ];
 
 function Heading({ no, kicker, children, note }) {
@@ -253,22 +269,23 @@ function App() {
         <section className="hero" id="home">
           <div className="hero-copy">
             <p className="hello">
-              <span className="wave">👋</span> Hi, I'm Debasis Kayal — based in
-              Kolkata, India
+              <span className="wave">👋</span> Hi, I'm Debasis Kayal — Senior
+              Frontend Developer, Kolkata
             </p>
             <h1>
               <span className="h1-line">I build</span>
               <span className="h1-line">
-                <mark>React</mark> &amp;
+                <mark>React</mark>
               </span>
               <span className="h1-line outline">
-                Native apps<span className="period">.</span>
+                web apps<span className="period">.</span>
               </span>
             </h1>
             <p className="hero-description">
-              React and React Native developer with {YEARS}+ years of experience
-              shipping responsive web portals, micro-frontends and mobile apps
-              with React Js, Next Js, Redux and API integration.
+              React.js developer with {YEARS}+ years of experience building and
+              maintaining web applications, with reusable components, responsive
+              UI, Redux state management and REST API integration — plus React
+              Native mobile development.
             </p>
 
             <div className="hero-actions">
@@ -315,12 +332,12 @@ function App() {
               </div>
               <pre>
                 <span className="c-key">const</span> <span className="c-var">debasis</span> = {"{"}
-                {"\n"}  role: <span className="c-str">"React Developer"</span>,
+                {"\n"}  role: <span className="c-str">"React.js Developer"</span>,
                 {"\n"}  since: <span className="c-num">2019</span>,
                 {"\n"}  stack: [
-                {"\n"}    <span className="c-str">"React Js"</span>,
-                {"\n"}    <span className="c-str">"Next Js"</span>,
-                {"\n"}    <span className="c-str">"React Native"</span>,
+                {"\n"}    <span className="c-str">"React.js"</span>,
+                {"\n"}    <span className="c-str">"Redux"</span>,
+                {"\n"}    <span className="c-str">"Next.js"</span>,
                 {"\n"}  ],
                 {"\n"}  coffee: <span className="c-key">true</span>,
                 {"\n"}{"}"};
@@ -328,7 +345,7 @@ function App() {
             </div>
 
             <div className="sticker sticker-one">⚛ React.js</div>
-            <div className="sticker sticker-two">Next.js · Redux</div>
+            <div className="sticker sticker-two">Redux · TypeScript</div>
           </div>
         </section>
 
@@ -361,26 +378,31 @@ function App() {
               <div className="about-avatar">
                 <span>DK</span>
               </div>
-              <p>Frontend developer</p>
-              <small>Kolkata · India</small>
+              <p>Senior Frontend Developer</p>
+              <small>Kolkata · West Bengal · India</small>
             </div>
             <div className="about-text reveal">
               <h3>Frontend developer focused on useful, reliable products.</h3>
               <p>
-                I want to work with a company where I can use my skills, gain
-                further experience, and help enhance the company's productivity
-                and reputation.
+                I'm a React.js developer with {YEARS}+ years of experience (May
+                2019 – Present) building and maintaining web applications and
+                contributing to React Native mobile development. I focus on
+                reusable component design, responsive UI, Redux state
+                management, REST API integration, troubleshooting and
+                performance-minded implementation.
               </p>
               <p>
-                Since May 2019 I have been working at Schemaphic Systems (I)
-                Pvt. Ltd. on React and React Native products, covering both web
-                portals and mobile apps. I completed my B.Voc at Asutosh
-                College (University of Calcutta) in 2019.
+                I've delivered product interfaces for healthcare research,
+                service marketplaces, art exhibitions, education, domain
+                management, camera retail and time tracking — working closely
+                with backend, QA and project teams. I completed my B.Voc. in
+                Software Development at Asutosh College in 2019.
               </p>
               <div className="facts">
-                <div><strong>Web</strong><span>React Js · Next Js</span></div>
+                <div><strong>Web</strong><span>React.js · Next.js</span></div>
                 <div><strong>Mobile</strong><span>React Native</span></div>
                 <div><strong>Experience</strong><span>May 2019 – Present</span></div>
+                <div><strong>Languages</strong><span>English · Hindi · Bengali</span></div>
               </div>
               <div className="hero-actions">
                 <a className="btn btn-ink" href={CV_URL} download>
@@ -403,7 +425,7 @@ function App() {
           <Heading
             no="02"
             kicker="My toolkit"
-            note="Technologies I use to build and maintain applications."
+            note="Technologies and practices I use to build and maintain applications."
           >
             Technical <em>skills</em>
           </Heading>
@@ -421,33 +443,47 @@ function App() {
               </div>
             ))}
           </div>
+          <div className="extras-grid">
+            {strengths.map((item) => (
+              <div className="extra-card reveal" key={item.title}>
+                <strong>{item.title}</strong>
+                <span>{item.value}</span>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="section" id="experience">
           <Heading no="03" kicker="My journey">
             Work <em>experience</em>
           </Heading>
-          <div className="job reveal">
-            <div className="job-side">
-              <span className="job-date">May 2019</span>
-              <span className="job-arrow">↓</span>
-              <span className="job-date job-now">Present</span>
-            </div>
-            <div className="job-body">
-              <div className="job-top">
-                <div>
-                  <h3>React &amp; React Native Developer</h3>
-                  <p className="company">Schemaphic Systems (I) Pvt. Ltd.</p>
+          <div className="jobs">
+            {jobs.map((job) => (
+              <div className="job reveal" key={job.company}>
+                <div className="job-side">
+                  <span className="job-date">{job.from}</span>
+                  <span className="job-arrow">↓</span>
+                  <span className={job.current ? "job-date job-now" : "job-date"}>
+                    {job.to}
+                  </span>
                 </div>
-                <span className="stamp">{YEARS}+ yrs</span>
+                <div className="job-body">
+                  <div className="job-top">
+                    <div>
+                      <h3>{job.role}</h3>
+                      <p className="company">{job.company}</p>
+                    </div>
+                    <span className="stamp">{job.stamp}</span>
+                  </div>
+                  <p className="location">{job.location}</p>
+                  <ul>
+                    {job.points.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <p className="location">Kolkata, India</p>
-              <ul>
-                {responsibilities.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
+            ))}
           </div>
         </section>
 
@@ -455,7 +491,7 @@ function App() {
           <Heading
             no="04"
             kicker="Selected work"
-            note="Web portals and mobile applications I have designed and developed using React and React Native."
+            note="Web applications I have built with React.js and Redux across healthcare, marketplaces, education and more."
           >
             Featured <em>projects</em>
           </Heading>
@@ -483,14 +519,7 @@ function App() {
                     ))}
                   </div>
                   <div className="project-foot">
-                    <span
-                      className={
-                        project.status === "Ongoing" ? "status live" : "status"
-                      }
-                    >
-                      {project.status === "Ongoing" && <i />}
-                      {project.status}
-                    </span>
+                    <span className="status">◆ {project.domain}</span>
                     {project.links && (
                       <div className="project-links">
                         {project.links.map((link) => (
@@ -527,14 +556,6 @@ function App() {
               </div>
             ))}
           </div>
-          <div className="extras-grid">
-            {extras.map((item) => (
-              <div className="extra-card reveal" key={item.title}>
-                <strong>{item.title}</strong>
-                <span>{item.value}</span>
-              </div>
-            ))}
-          </div>
         </section>
 
         <section className="section" id="contact">
@@ -544,8 +565,8 @@ function App() {
               Got a project or <em>opportunity</em> in mind?
             </h2>
             <p className="contact-text">
-              I am interested in discussing React Js, Next Js, React Native and
-              frontend development opportunities.
+              I am interested in discussing React.js, Next.js and frontend
+              development opportunities.
             </p>
             <a className="contact-mail" href={`mailto:${EMAIL}`}>
               {EMAIL}
@@ -562,11 +583,10 @@ function App() {
               {PHONES.map((phone) => (
                 <a key={phone} href={`tel:+91${phone}`}>+91 {phone}</a>
               ))}
-              <a
-                href="https://github.com/debasiskayal1993"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={LINKEDIN} target="_blank" rel="noreferrer">
+                LinkedIn ↗
+              </a>
+              <a href={GITHUB} target="_blank" rel="noreferrer">
                 GitHub ↗
               </a>
             </div>
